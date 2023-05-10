@@ -1,0 +1,9 @@
+version: 1.0
+runtime: corretto11
+build:
+  commands:
+    build:
+      - gradlew clean build
+run:
+  command: java -Xms256m -jar build/libs/gradleapprunner-0.0.1-SNAPSHOT.jar
+  port: 8080
